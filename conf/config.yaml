@@ -1,0 +1,17 @@
+---
+# List of Kafka Clusters, you want krokery to manage, Required
+kafka:
+  - # ID of the Cluster, Required
+    id: 'local'
+
+    # Name of the Cluster, Optional Defaults to ID
+    name: 'Local Cluster'
+
+    # Kafka Brokers, Required
+    bootstrap_servers: "localhost:9092,localhost:9093,localhost:9094"
+
+    # Postgres Database URL, Required
+    postgres_url: "postgresql://localhost:5432/krokery"
+
+    # Redis URL, Required
+    redis_url: "redis://localhost:6379/0"
